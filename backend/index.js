@@ -38,7 +38,7 @@ app.put('/completed',async function(req,res){
         });
         return;
     }
-    
+
     await todo.update({
         _id:req.body.id
     },{
@@ -49,3 +49,5 @@ app.put('/completed',async function(req,res){
         msg:"Your Todo is marked as Completed.."
     })
 })
+
+app.listen(3000);
